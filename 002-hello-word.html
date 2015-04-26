@@ -20,10 +20,44 @@
 	    return (
 	      <div>
 	        Hello, world! I am a RecipeBook.
+          <RecipeList/>
+          <RecipeForm/>
+          <HelloWorld/>
 	      </div>
 	    );
 	  }
 	});
+var RecipeList = React.createClass({
+	  render: function() {
+	    return (
+	      <div>
+	        RecipeList component text
+	      </div>
+	    );
+	  }
+	});
+
+  var RecipeForm = React.createClass({
+	  render: function() {
+	    return (
+	      <div>
+	        RecipeForm component text
+	      </div>
+	    );
+	  }
+	});
+
+var HelloWorld = React.createClass({
+	  render: function() {
+	    return (
+	      <p>
+	       Hello World!
+	      </p>
+	    );
+	  }
+	});
+
+
 	/* controller view calls render */
 	React.render(
 		/* Recipe book is just a function, attrs are args */
